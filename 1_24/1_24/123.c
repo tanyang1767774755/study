@@ -67,3 +67,133 @@ if (!(click % 2) && click != 0)
 	HAL_Delay(1000);											//bug3
 	HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
 }
+
+
+
+
+begin:
+while(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 0)
+{
+	int i=0,a=500;
+	i++;
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 1)	//这一段代码几乎必然不会执行
+	{
+		HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 0;
+		i++;
+	}
+}
+
+
+{
+	if(i==1)							//i==1
+	{
+		if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 0)
+		{	HAL_Delay(1000);
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		HAL_Delay(a);
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		a-=25;
+		if(a<0)
+			break;
+		}
+		if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 1)
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		i--;
+	}
+	goto begin;
+	if(i=2)
+	{
+		HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 1;
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);//没有延时
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		i-=2;
+	}
+	goto begin
+}
+
+while(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 0)
+{
+	int i=0,a=500;
+	i++;
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 1)
+	{
+		HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 0;
+		i++;
+	}
+
+}
+{
+	if(i=1)
+	{
+		if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 0)
+		{	HAL_Delay(1000);
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		HAL_Delay(a);
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		a-=25;
+		if(a<0)
+			break;
+		}
+		if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 1)
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		i--;
+	}
+	goto begin
+	if(i=2)
+	{
+		HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 1;
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		i-=2;
+	}
+	goto begin;
+}
+
+while (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 0)
+{
+	int i = 0, a = 500;
+	i++;
+	if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 1)
+	{
+		HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 0;
+		i++;
+	}
+
+}
+{
+	if (i = 1)
+	{
+		if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 0)
+		{
+			HAL_Delay(1000);
+			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+			HAL_Delay(a);
+			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+			a -= 25;
+			if (a<0)
+				break;
+		}
+		if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 1)
+			HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		i--;
+	}
+	goto begin;
+	if (i = 2)
+	{
+		HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0) == 1;
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		//延时
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+		i -= 2;
+	}
+	goto begin;
+}
