@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F73C824-C28A-46BE-A3E3-712F0B7B6AA1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pythonvctest</RootNamespace>
+    <AssemblyName>Pythonvctest</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="PythonTools.html" />
+    <Content Include="vslogo.png" />
+  </ItemGroup>
+</Project>
