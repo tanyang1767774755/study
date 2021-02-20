@@ -1,21 +1,21 @@
-#define _CRT_SECURE_NO_WARNINGS 1
+ï»¿#define _CRT_SECURE_NO_WARNINGS 1
 #include "opencv2/highgui.hpp"
 
 using namespace cv;
 
 int main(int argc, char* argv[])
 {
-	const char* imagename = "C:\\Users\\LENOVO\\Desktop\\PSÑ§Ï°\\Ì·Ñó11-19.jpg";
+	const char* imagename = "C:/Users/LENOVO/Desktop/PSå­¦ä¹ /è°­æ´‹11-19.jpg";
 
-	Mat img = imread(imagename); //´ÓÎÄ¼şÖĞ¶ÁÈëÍ¼Ïñ
+	Mat img = imread(imagename); //ä»æ–‡ä»¶ä¸­è¯»å…¥å›¾åƒ
 
-	if (img.empty()) //Èç¹û¶ÁÈëÍ¼ÏñÊ§°Ü
+	if (img.empty()) //å¦‚æœè¯»å…¥å›¾åƒå¤±è´¥
 	{
 		fprintf(stderr, "Cannot load image %s\n", imagename);
 		return -1;
 	}
 
-	imshow("image", img); //ÏÔÊ¾Í¼Ïñ
+	imshow("image", img); //æ˜¾ç¤ºå›¾åƒ
 
 	waitKey();
 	return 0;
