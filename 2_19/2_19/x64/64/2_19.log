@@ -1,0 +1,11 @@
+﻿生成启动时间为 2021/2/19 13:50:37。
+     1>项目“D:\程序\study\2_19\2_19\2_19.vcxproj”在节点 2 上(Build 个目标)。
+     1>Link:
+         D:\Program Files (x86)\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\程序\study\2_19\x64\64\2_19.exe" /NOLOGO opencv_world451d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"D:\程序\study\2_19\x64\64\2_19.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\程序\study\2_19\x64\64\2_19.lib" /MACHINE:X64 x64\64\opencv_test.obj
+     1>opencv_test.obj : error LNK2019: 无法解析的外部符号 "void __cdecl cv::imshow(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class cv::_InputArray const &)" (?imshow@cv@@YAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV_InputArray@1@@Z)，该符号在函数 main 中被引用
+     1>D:\程序\study\2_19\x64\64\2_19.exe : fatal error LNK1120: 1 个无法解析的外部命令
+     1>已完成生成项目“D:\程序\study\2_19\2_19\2_19.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.17
