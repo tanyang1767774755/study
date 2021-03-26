@@ -2,7 +2,6 @@
 # @Time:2021/2/20 17:24
 # @Author:谭洋
 # @File:opencv-io-test.py
-import cv
 
 import cv2
 

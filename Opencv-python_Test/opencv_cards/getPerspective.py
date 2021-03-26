@@ -19,10 +19,10 @@ matrix = cv2.getPerspectiveTransform(pst1,pst2)  #进行变换
 Perspect_img=cv2.warpPerspective(img,matrix,(width,hight))
 cv2.imshow("warpPerspective",Perspect_img)
 cv2.waitKey(0)
-##################################图片堆叠
+##################################  图片堆叠
 img=cv2.imread("cards.jpg")
 
-img_hstack = np.hstack((img,img))#必须有相同的通道数
+img_hstack = np.hstack((img,img))#  必须有相同的通道数
 img_vstack = np.vstack((img,img))
 cv2.imshow('img_hstack',img_hstack)
 cv2.imshow("vstack",img_vstack)
